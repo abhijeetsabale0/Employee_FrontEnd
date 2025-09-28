@@ -12,6 +12,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
+                echo "Building Job"
                 git url: "https://github.com/abhijeetsabale0/Employee_FrontEnd.git", branch: "main"
             }
         }
